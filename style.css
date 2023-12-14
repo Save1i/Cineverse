@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Golos Text", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 3184px;
+  background: linear-gradient(180deg, #250d3c 0%, #000 63.02%);
+}
+
+.header {
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.logo {
+  width: 99px;
+  height: 32px;
+}
+
+.header__inner {
+  display: flex;
+  gap: 174px;
+  align-items: center;
+  padding: 32px 170px 0 81px;
+  max-width: 1265px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 100px;
+  list-style-type: none;
+}
+
+.menu__list-link {
+  color: #fff;
+}
+
+.main {
+}
+
+.promo {
+  background-image: url(images/header_poster.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 990px;
+}
