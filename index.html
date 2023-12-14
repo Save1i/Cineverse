@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -21,7 +21,7 @@
             <button class="header__btn">
               <img src="images/icon_menu.svg" alt="icon menu" />
             </button>
-            <div class="logo"><img src="images/logo.png" alt="" /></div>
+            <img class="logo" src="images/logo.svg" alt="" />
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
@@ -33,18 +33,56 @@
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#">Билеты</a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Войти</a>
-                </li>
               </ul>
             </nav>
+            <div class="menu__list-item">
+              <a href="#" class="menu__list-link menu__login">Войти</a>
+            </div>
           </div>
         </div>
       </header>
       <main class="main">
         <section class="promo">
           <div class="container">
-            <div class="promo__inner"></div>
+            <div class="promo__inner">
+              <h1 class="promo__title">
+                Фильмы, сериалы и многое другое без ограничений
+              </h1>
+              <p class="promo__offer">
+                Первый месяц бесплатно, каждый следующий 6.50 BYN в месяц
+              </p>
+              <button class="promo__btn">
+                <p class="promo__btn-text">Попробовать 30 дней бесплатно</p>
+              </button>
+              <div class="promo__decorate">
+                <div class="promo__decorate__el">
+                  <h2 class="promo__decorate__el__stat">1680+</h2>
+                  <p class="promo__decorate__el__type">сериалов</p>
+                </div>
+                <div class="promo__decorate__el">
+                  <h2 class="promo__decorate__el__stat">2000+</h2>
+                  <p class="promo__decorate__el__type">фильмов</p>
+                </div>
+                <div class="promo__decorate__el">
+                  <h2 class="promo__decorate__el__stat">80+</h2>
+                  <p class="promo__decorate__el__type">TV-каналов</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="films">
+          <div class="container">
+            <div class="films__inner">
+              <div class="watching-now">
+                <a class="watching-now__title" href="#">Смотрят сейчас</a>
+                <div class="watching-now__films">
+                  <img class="film-poster" src="images/hobbit.png" alt="film" />
+                  <img class="film-poster" src="images/hobbit.png" alt="film" />
+                  <img class="film-poster" src="images/hobbit.png" alt="film" />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
