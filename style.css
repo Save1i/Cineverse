@@ -194,13 +194,15 @@ ul {
 }
 
 .watching-now {
+  padding-top: 144px;
 }
+
 .watching-now__title {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
-  display: block;
   margin-bottom: 39px;
+  display: block;
 }
 .watching-now__films {
   display: flex;
@@ -209,4 +211,16 @@ ul {
 .film-poster {
   width: 504px;
   height: 252px;
+}
+
+.recommended-series {
+  margin-top: 114px;
+}
+
+.movies-evening {
+  margin-top: 114px;
+}
+
+.free-films {
+  margin-top: 114px;
 }
