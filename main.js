@@ -40,10 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (content.style.maxHeight) {
         // If the content is open, close it
         content.style.maxHeight = null;
+        content.style.paddingTop = null;
       } else {
         // Close all other contents and open the clicked one
         closeAllAccordionContents();
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = content.scrollHeight + "40px";
+        content.style.paddingTop = "40px";
       }
     });
   });
@@ -52,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const allContents = document.querySelectorAll(".accordion__content");
     allContents.forEach((content) => {
       content.style.maxHeight = null;
+      content.style.paddingTop = null;
     });
   }
 });

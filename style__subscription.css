@@ -233,7 +233,7 @@ ul {
   font-size: 40px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .accordion__content {
@@ -242,7 +242,8 @@ ul {
   font-size: 23px;
   font-weight: 400;
   width: 885px;
+  padding-top: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.2s ease-in-out, padding-top 0.3s ease-in-out;
 }
