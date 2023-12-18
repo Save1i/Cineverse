@@ -142,12 +142,7 @@ ul {
   padding: 19px 63px;
   align-items: center;
   border-radius: 20px;
-  background: linear-gradient(
-    270deg,
-    #f4cb51 11.01%,
-    #f1a329 47.16%,
-    #ea780f 81.68%
-  );
+  background: linear-gradient(270deg, #f4cb51 11.01%, #f1a329 47.16%, #ea780f 81.68%);
   border: none;
   margin-bottom: 88px;
   transition: transform 0.2s ease-in-out; /* добавляем transition для плавной анимации */
@@ -199,7 +194,7 @@ ul {
   background-color: #0c0513;
   /* filter: blur(20px); */
   min-width: 1512px;
-  min-height: 2196px;
+  min-height: 1500px;
   position: relative;
   top: 0px;
 }
@@ -245,4 +240,75 @@ ul {
 
 .free-films {
   margin-top: 114px;
+}
+
+.footer {
+  background: #0d0614;
+}
+
+.footer__inner {
+  padding-bottom: 53px;
+  padding-top: 117px;
+}
+
+.horizontal-line {
+  height: 0px;
+  border: 1px SOLID rgba(244, 203, 82, 0.6);
+  width: 1300px;
+  margin: 0px auto 70px auto;
+}
+
+.footer__contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__question {
+}
+
+.logo-pic {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 54px;
+}
+
+.questionn {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 14.396px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11.68px; /* 81.138% */
+  letter-spacing: -0.121px;
+}
+
+.footer__social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 15px;
+}
+
+.social-media {
+  display: flex;
+  gap: 35px;
+}
+
+.horizontal-line--small {
+  border: 2px solid #fff;
+  width: 279px;
+  height: 0px;
+  margin-top: 28px;
+}
+
+.footer__wish {
+  color: #fff;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 17.268px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.949px; /* 127.105% */
+  letter-spacing: 3.3px;
+  padding-top: 34px;
 }
