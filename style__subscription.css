@@ -228,10 +228,10 @@ ul {
   margin-bottom: 0px;
 }
 
-/* .accordion__title {
+.accordion__title {
   display: flex;
   justify-content: space-between;
-} */
+}
 
 .accordion__btn {
   color: #fff;
@@ -244,7 +244,7 @@ ul {
   position: relative;
 }
 
-.accordion__btn::after {
+/* .accordion__btn::after {
   content: "";
   background-image: url(images/Плюс.svg);
   width: 48px;
@@ -253,11 +253,54 @@ ul {
   right: 0;
   top: 0;
   background-position: center;
+} */
+
+.burger {
+  display: flex;
+  width: 48px;
+  height: 50px;
+  position: relative;
+  align-items: center;
+  transition: transform 2s ease-out;
 }
 
-/* .accordion__btn.accordion__btn::after {
+.burger span {
+  display: block;
+  height: 2px;
+  width: 48px;
+  background-color: #ea780f;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-out;
+}
+
+.burger::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 48px;
+  background-color: #ea780f;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-out;
+}
+
+.burger.active span {
+  display: block;
+  height: 2px;
+  width: 48px;
+  background-color: #ea780f;
   transform: rotate(45deg);
-} */
+}
+
+.burger.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 48px;
+  background-color: #ea780f;
+  transform: rotate(135deg);
+}
 
 .accordion__content {
   color: #fff;

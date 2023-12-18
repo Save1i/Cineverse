@@ -60,24 +60,25 @@ function animateButton() {
 // });
 
 const accordion = document.querySelector(".accordion");
-const accordionButtons = document.querySelectorAll(".accordion__btn");
+const accordionButtons = document.querySelectorAll(".accordion__title");
 const plus = document.querySelector(".accordion__btn::after");
+// const decor = document.querySelector(".burger");
 
 accordionButtons.forEach.call(accordionButtons, function (accordionButton) {
   accordionButton.addEventListener("click", function () {
     const currentText = accordionButton.parentElement.querySelector(".accordion__content");
+    const decor = accordionButton.parentElement.querySelector(".burger");
 
+    decor.classList.toggle("active");
     accordionButton.classList.toggle(".accordion__btn--active");
     currentText.classList.toggle(".accordion__content--visible");
 
     if (currentText.classList.contains(".accordion__content--visible")) {
       currentText.style.maxHeight = currentText.scrollHeight + "px";
       currentText.style.opacity = 1;
-      plus.style.transform = "rotate(45deg)";
     } else {
       currentText.style.maxHeight = null;
       currentText.style.opacity = 0;
-      plus.style.transform = "rotate(0deg)";
     }
   });
 });
