@@ -142,6 +142,7 @@ ul {
   padding: 19px 63px;
   align-items: center;
   border-radius: 20px;
+  cursor: pointer;
   background: linear-gradient(270deg, #f4cb51 11.01%, #f1a329 47.16%, #ea780f 81.68%);
   border: none;
   margin-bottom: 88px;
