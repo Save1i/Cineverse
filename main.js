@@ -12,57 +12,9 @@ function animateButton() {
   }, 300);
 }
 
-// document.querySelectorAll("accordion__btn").forEach((el) => {
-//   el.addEventListener("click", () => {
-//     let content = el.nextElementSibling;
-//     console.log(content);
-
-//     if (content.style.maxHeight) {
-//       document
-//         .querySelectorAll(".content")
-//         .forEach((el) => (el.style.maxHeight = null));
-//     } else {
-//       document
-//         .querySelectorAll(".content")
-//         .forEach((el) => (el.style.maxHeight = null));
-//       el.style.maxHeight = content.scrollHeight + "px";
-//     }
-//   });
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const accordionButtons = document.querySelectorAll(".accordion__btn");
-
-//   accordionButtons.forEach((button) => {
-//     button.addEventListener("click", function () {
-//       const content = this.nextElementSibling;
-
-//       if (content.style.maxHeight) {
-//         // If the content is open, close it
-//         content.style.maxHeight = null;
-//         content.style.paddingTop = null;
-//       } else {
-//         // Close all other contents and open the clicked one
-//         closeAllAccordionContents();
-//         content.style.maxHeight = content.scrollHeight + "40px";
-//         content.style.paddingTop = "40px";
-//       }
-//     });
-//   });
-
-//   function closeAllAccordionContents() {
-//     const allContents = document.querySelectorAll(".accordion__content");
-//     allContents.forEach((content) => {
-//       content.style.maxHeight = null;
-//       content.style.paddingTop = null;
-//     });
-//   }
-// });
-
 const accordion = document.querySelector(".accordion");
 const accordionButtons = document.querySelectorAll(".accordion__title");
 const plus = document.querySelector(".accordion__btn::after");
-// const decor = document.querySelector(".burger");
 
 accordionButtons.forEach.call(accordionButtons, function (accordionButton) {
   accordionButton.addEventListener("click", function () {
@@ -82,3 +34,15 @@ accordionButtons.forEach.call(accordionButtons, function (accordionButton) {
     }
   });
 });
+
+function toggleActive(addClass, removeClass) {
+  const addElement = document.getElementById(`${addClass}`);
+  const removeElement = document.getElementById(`${removeClass}`);
+
+  switch (addElement && removeElement) {
+    case removeElement:
+      addElement.classList.add("active");
+      removeElement.classList.remove("active");
+      break;
+  }
+}
