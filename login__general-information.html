@@ -20,35 +20,26 @@
           <div class="main__inner">
             <div class="form__login">
               <img class="logo" src="images/logo.svg" alt="" />
-              <h2 class="form__title">Войдите или зарегистрируйтесь</h2>
-              <div class="switch">
-                <div class="switch__inner">
-                  <div
-                    class="email__btn active"
-                    id="email__btn"
-                    onclick="toggleActive('email__btn', 'phone__btn')"
-                  >
-                    Почта
-                  </div>
-                  <div
-                    class="phone__btn"
-                    id="phone__btn"
-                    onclick="toggleActive('phone__btn', 'email__btn')"
-                  >
-                    Телефон
-                  </div>
-                </div>
+              <div class="search-form">
+                <p class="search-form__text">Имя</p>
+                <input class="search" type="text" placeholder="Ваше Имя" />
               </div>
               <div class="search-form">
-                <input class="search" type="text" placeholder="E-mail или номер телефона" />
+                <p class="search-form__text">Фамилия</p>
+                <input class="search" type="text" placeholder="Ваша Фамилия" />
               </div>
-              <button class="login__btn" type="button" onclick="animateButton()">
-                <p class="login__btn-text">Войти</p>
+              <div class="search-form">
+                <p class="search-form__text">Электронная почта</p>
+                <input class="search" type="email" placeholder="E-mail" />
+              </div>
+              <button
+                class="login__btn"
+                id="login__btn-general-info"
+                type="button"
+                onclick="transitionButton('login__btn-general-info')"
+              >
+                <p class="login__btn-text">Далее</p>
               </button>
-              <button class="register__btn" type="button" onclick="animateButton__login()">
-                <p class="register__btn-text">Зарегистрироваться</p>
-              </button>
-              <p class="login__other">Войти с помощью</p>
             </div>
           </div>
         </div>
