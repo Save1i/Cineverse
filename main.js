@@ -47,8 +47,36 @@ function toggleActive(addClass, removeClass) {
   }
 }
 
-function animateButton__login() {
-  const button = document.querySelector(".register__btn");
+// function animateButton__login() {
+//   const button = document.querySelector(".register__btn");
+//   button.classList.add("clicked"); // добавляем класс для анимации
+
+//   // Ждем некоторое время и удаляем класс
+//   setTimeout(function () {
+//     button.classList.remove("clicked");
+//   }, 200);
+
+//   setTimeout(function () {
+//     window.location.href = "login__input-number.html"; // переход на страницу subscription.html
+//   }, 300);
+// }
+
+// function animateButton__login_inputnumber() {
+//   const button = document.querySelector(".login__btn");
+//   button.classList.add("clicked"); // добавляем класс для анимации
+
+//   // Ждем некоторое время и удаляем класс
+//   setTimeout(function () {
+//     button.classList.remove("clicked");
+//   }, 200);
+
+//   setTimeout(function () {
+//     window.location.href = "login__general-information.html"; // переход на страницу subscription.html
+//   }, 300);
+// }
+
+function transitionButton(addTransition) {
+  const button = document.getElementById(`${addTransition}`);
   button.classList.add("clicked"); // добавляем класс для анимации
 
   // Ждем некоторое время и удаляем класс
@@ -57,20 +85,18 @@ function animateButton__login() {
   }, 200);
 
   setTimeout(function () {
-    window.location.href = "login__input-number.html"; // переход на страницу subscription.html
-  }, 300);
-}
+    switch (addTransition) {
+      case "login__btn-register":
+        window.location.href = "login__input-number.html";
+        break;
+      case "login__btn-input-number":
+        window.location.href = "login__general-information.html";
+        break;
+      case "login__btn-general-info":
+        window.location.href = "personal-area.html";
+        break;
+    }
 
-function animateButton__login_inputnumber() {
-  const button = document.querySelector(".login__btn");
-  button.classList.add("clicked"); // добавляем класс для анимации
-
-  // Ждем некоторое время и удаляем класс
-  setTimeout(function () {
-    button.classList.remove("clicked");
-  }, 200);
-
-  setTimeout(function () {
-    window.location.href = "login__general-information.html"; // переход на страницу subscription.html
-  }, 300);
+    // переход на страницу subscription.html
+  }, 150);
 }
