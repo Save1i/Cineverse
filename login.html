@@ -42,10 +42,15 @@
               <div class="search-form">
                 <input class="search" type="text" placeholder="E-mail или номер телефона" />
               </div>
-              <button class="login__btn" type="button" onclick="animateButton()">
+              <button class="login__btn" type="button">
                 <p class="login__btn-text">Войти</p>
               </button>
-              <button class="register__btn" type="button" onclick="animateButton__login()">
+              <button
+                class="register__btn"
+                id="login__btn-register"
+                type="button"
+                onclick="transitionButton('login__btn-register')"
+              >
                 <p class="register__btn-text">Зарегистрироваться</p>
               </button>
               <p class="login__other">Войти с помощью</p>
