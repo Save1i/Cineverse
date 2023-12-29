@@ -71,6 +71,6 @@ function animateButton__login_inputnumber() {
   }, 200);
 
   setTimeout(function () {
-    window.location.href = "login__general information.html"; // переход на страницу subscription.html
+    window.location.href = "login__general-information.html"; // переход на страницу subscription.html
   }, 300);
 }
