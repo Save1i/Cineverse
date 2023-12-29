@@ -46,3 +46,31 @@ function toggleActive(addClass, removeClass) {
       break;
   }
 }
+
+function animateButton__login() {
+  const button = document.querySelector(".register__btn");
+  button.classList.add("clicked"); // добавляем класс для анимации
+
+  // Ждем некоторое время и удаляем класс
+  setTimeout(function () {
+    button.classList.remove("clicked");
+  }, 200);
+
+  setTimeout(function () {
+    window.location.href = "login__input-number.html"; // переход на страницу subscription.html
+  }, 300);
+}
+
+function animateButton__login_inputnumber() {
+  const button = document.querySelector(".login__btn");
+  button.classList.add("clicked"); // добавляем класс для анимации
+
+  // Ждем некоторое время и удаляем класс
+  setTimeout(function () {
+    button.classList.remove("clicked");
+  }, 200);
+
+  setTimeout(function () {
+    window.location.href = "login__general information.html"; // переход на страницу subscription.html
+  }, 300);
+}
