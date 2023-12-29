@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #250d3c 0%, #000 91.15%);
+  position: relative;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  background-image: url(images/фон__подписка.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0px;
+  min-height: 100vh;
+}
+
+.main__inner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__login {
+  width: 420px;
+  height: 435px;
+  border-radius: 20px;
+  background: #f5f5f5;
+}
+
+.logo {
+  display: block;
+  margin: 40px auto 0;
+}
+
+.form__title {
+  width: 380px;
+  margin: 40px auto 0;
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.search-form {
+  margin: 30px auto 0;
+  width: 350px;
+  height: 62px;
+  position: relative;
+}
+
+.search {
+  width: 350px;
+  height: 62px;
+  border-radius: 20px;
+  border: 1px solid #aeaeae;
+  outline: none;
+  padding: 17px 18px 10px 22px;
+}
+
+.search::placeholder {
+  color: #d9d9d9;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.455px; /* 135.23% */
+  letter-spacing: -0.335px;
+}
+
+.search-form::after {
+  content: "";
+  position: absolute;
+  background-image: url(images/small_arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 5;
+  top: 28px;
+  right: 50px;
+  height: 8px;
+  width: 14px;
+}
+
+.search-form::before {
+  content: "";
+  position: absolute;
+  background-image: url(images/🇧🇾.svg);
+  background-position: center;
+  z-index: 5;
+  top: 15px;
+  right: 20px;
+  height: 30px;
+  width: 25px;
+}
+
+.login__btn {
+  display: block;
+  margin: 44px auto 0;
+  width: 350px;
+  height: 62px;
+  border-radius: 20px;
+  background: #000;
+}
+
+.login__btn-text {
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25.644px; /* 106.849% */
+  letter-spacing: -0.265px;
+}
