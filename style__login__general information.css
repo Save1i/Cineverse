@@ -69,125 +69,27 @@ ul {
 
 .form__login {
   width: 420px;
-  height: 648px;
+  height: 575px;
   border-radius: 20px;
   background: #f5f5f5;
 }
 
 .logo {
   display: block;
-  margin: 40px auto 0;
+  margin: 40px auto 50px;
 }
-
-.form__title {
-  width: 240px;
-  margin: 50px auto 0;
-  text-align: center;
-  color: #000;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.switch {
-}
-
-.switch__inner {
-  width: 350px;
-  height: 62px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px auto 0;
-  border-radius: 20px;
-  border: 1px solid #aeaeae;
-}
-
-.email__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 176px;
-  height: 62px;
-  border-radius: 20px;
-  margin-left: -1px;
-  cursor: pointer;
-  color: #8f8f8f;
-  font-size: 24px;
-}
-
-/* .email__btn-text {
-    color: #8f8f8f;
-    font-size: 24px;
-  } */
-
-.email__btn.active {
-  width: 175px;
-  height: 62px;
-  border-radius: 20px;
-  background: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: #000;
-  font-family: Rubik;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-/* .email__btn-text.active {
-    color: #000;
-    font-family: Rubik;
-    font-size: 24px;
-    font-weight: 400;
-  } */
-
-.phone__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 176px;
-  height: 62px;
-  border-radius: 20px;
-  margin-right: -1px;
-  cursor: pointer;
-  color: #8f8f8f;
-  font-family: Rubik;
-  font-size: 24px;
-}
-
-/* .phone__btn-text {
-    color: #8f8f8f;
-    font-family: Rubik;
-    font-size: 24px;
-  } */
-
-.phone__btn.active {
-  width: 175px;
-  height: 62px;
-  border-radius: 20px;
-  background: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: #000;
-  font-family: Rubik;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-/* .phone__btn-text.active {
-    color: #000;
-    font-family: Rubik;
-    font-size: 24px;
-    font-weight: 400;
-  } */
 
 .search-form {
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   width: 350px;
-  height: 62px;
+}
+
+.search-form__text {
+  color: #000;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .search {
@@ -214,6 +116,7 @@ ul {
   height: 62px;
   border-radius: 20px;
   background: #000;
+  margin-top: 30px;
 }
 
 .login__btn-text {
@@ -222,7 +125,6 @@ ul {
   font-size: 24px;
   font-weight: 500;
   line-height: 25.644px; /* 106.849% */
-  letter-spacing: -0.265px;
 }
 
 .register__btn {
