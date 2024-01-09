@@ -19,14 +19,50 @@
         <header class="header">
           <div class="container">
             <div class="header__inner">
-              <button class="header__btn">
-                <img src="images/icon_menu.svg" alt="icon menu" />
-              </button>
+              <div class="header__menu">
+                <button class="header__btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="header__menu-container">
+                  <ul class="menu-list">
+                    <li class="menu-item">
+                      <img class="menu-icon" src="images/general.png" alt="" /><a
+                        href="index.html"
+                        class="menu-link"
+                        >Главная</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <img class="menu-icon" src="images/ticket.png" alt="" /><a
+                        href=""
+                        class="menu-link"
+                        >Билеты</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <img class="menu-icon" src="images/sub.png" alt="" /><a
+                        href="subscription.html"
+                        class="menu-link"
+                        >Подписка</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <img class="menu-icon" src="images/media.png" alt="" /><a
+                        href=""
+                        class="menu-link"
+                        >Медиа</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <img class="logo" src="images/Logo_words.svg" alt="" />
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__list-item">
-                    <a class="menu__list-link" href="index.html">Главная</a>
+                    <a class="menu__list-link" href="cinema-lib__menu.html">Главная</a>
                   </li>
                   <li class="menu__list-item">
                     <a class="menu__list-link" href="#">Каналы</a>
@@ -37,86 +73,90 @@
                 </ul>
               </nav>
               <div class="menu__list-item">
-                <a href="login.html" class="menu__list-link menu__login">Войти</a>
+                <button class="loop__btn">
+                  <img class="loop__img" src="images/loop.svg" alt="o" />
+                </button>
+                <a href="personal-area.html" class="menu__list-link menu__login">Мой аккаунт</a>
               </div>
             </div>
           </div>
         </header>
-        <section class="promo">
+        <section class="profile">
           <div class="container">
-            <div class="promo__inner">
-              <h1 class="promo__title">Добро пожаловать!</h1>
-              <p class="promo__offer promo__offer__sub">У вас осталось 10 дней пробного периода</p>
-              <h1 class="promo__title-sub">Остались вопросы?</h1>
-              <div class="accordion">
-                <div class="accordion__el">
-                  <div class="accordion__title">
-                    <div class="accordion__btn">Что такое Cineverse?</div>
-                    <div class="burger">
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="accordion__content">
-                    <p class="accordion__text">
-                      Это специальный сервис для просмотра любимых фильмов и сериалов. С помощью
-                      Cineverse, вы с легкостью можете купить билеты в кинотеатр.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion__el">
-                  <div class="accordion__title">
-                    <div class="accordion__btn">Как работает пробный период в Cineverse?</div>
-                    <div class="burger">
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="accordion__content">
-                    <p class="accordion__text">
-                      Пробный период в Cineverse предоставляет пользователям бесплатный доступ к
-                      сервису на 30 дней, прежде чем им будет начислена плата.
-                    </p>
+            <div class="profile__inner">
+              <h1 class="profile__title">Добро пожаловать!</h1>
+              <p class="profile__offer">У вас осталось 10 дней пробного периода</p>
+              <div class="profile__contain">
+                <div class="profile__side-bar">
+                  <ul class="side-bar__list">
+                    <li class="side-bar__list-item">
+                      <a href="" class="side-bar__list-link">Профиль</a>
+                    </li>
+                    <li class="side-bar__list-item">
+                      <a href="" class="side-bar__list-link">Мои просмотры</a>
+                    </li>
+                    <li class="side-bar__list-item">
+                      <a href="" class="side-bar__list-link">Способы оплаты</a>
+                    </li>
+                    <li class="side-bar__list-item">
+                      <a href="" class="side-bar__list-link">Настройки</a>
+                    </li>
+                  </ul>
+                  <div class="side-bar__down-link">
+                    <a href="" class="side-bar__link-help">Поддержка и помощь</a>
+                    <a href="" class="side-bar__link-out">Выйти</a>
                   </div>
                 </div>
-                <div class="accordion__el">
-                  <div class="accordion__title">
-                    <div class="accordion__btn">Как подключить подписку для студентов?</div>
-                    <div class="burger">
-                      <span></span>
+                <div class="profile__info">
+                  <h3 class="profile__info__title"></h3>
+                  <div class="profile__info__card">
+                    <h3 class="info__title">Ваш профиль</h3>
+                    <div class="profile__info__contain">
+                      <div class="search-forms__contain">
+                        <div class="search-form">
+                          <p class="search-form__text">Имя</p>
+                          <input class="search" type="text" placeholder="Ваше Имя" />
+                        </div>
+                        <div class="search-form">
+                          <p class="search-form__text">Фамилия</p>
+                          <input class="search" type="text" placeholder="Ваша Фамилия" />
+                        </div>
+                        <div class="search-form">
+                          <p class="search-form__text">Электронная почта</p>
+                          <input class="search" type="text" placeholder="E-mail" />
+                        </div>
+                        <div class="search-form input-tel">
+                          <p class="search-form__text">Номер телефона</p>
+                          <input
+                            class="search"
+                            type="text"
+                            placeholder="+375 (00) 000-00-00
+                          🇧🇾"
+                          />
+                        </div>
+                        <div class="search-form input-gender">
+                          <p class="search-form__text">Пол</p>
+                          <div class="dropdown">
+                            <button class="search" id="dropdownInput" onclick="toggleDropdown()">
+                              <p class="gender" id="gender">Мужской</p>
+                            </button>
+                            <ul id="myDropdown" class="dropdown-content">
+                              <li>
+                                <p id="woman" onclick="changeGender('woman')">Женский</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="info__boring-items">
+                          <p class="boring-items__el">Правила пользования сервисом</p>
+                          <p class="boring-items__el">О защите персональных данных</p>
+                          <p class="boring-items__el">
+                            Об ограничении исключительных прав на объекты интеллектуальной
+                            собствеености
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="accordion__content">
-                    <p class="accordion__text">
-                      Это специальный сервис для просмотра любимых фильмов и сериалов. С помощью
-                      Cineverse, вы с легкостью можете купить билеты в кинотеатр.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion__el">
-                  <div class="accordion__title">
-                    <div class="accordion__btn">Как отменить подписку?</div>
-                    <div class="burger">
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="accordion__content">
-                    <p class="accordion__text">
-                      Ой, ребята, я сегодня заправил полный бак в свою малышку <br />А ты, заправил?
-                      <br />Одеяло в пододеяльник <br />Аха-ха-ха-ха
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion__el">
-                  <div class="accordion__title">
-                    <div class="accordion__btn">Что можно посмотреть на Cineverse?</div>
-                    <div class="burger">
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="accordion__content">
-                    <p class="accordion__text">
-                      ╰(*°▽°*)╯ <br />Поздравляю, ты долиcтал до последнего пункта, держи медальку
-                      <a href="https://www.youtube.com/watch?v=3rdWGpX6sXk">🥇</a>
-                    </p>
                   </div>
                 </div>
               </div>
