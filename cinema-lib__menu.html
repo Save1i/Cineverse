@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style__cinema-lib__menu.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__menu">
+              <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header__menu-container">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/general.png" alt="" /><a
+                      href="index.html"
+                      class="menu-link"
+                      >Главная</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/ticket.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Билеты</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/sub.png" alt="" /><a
+                      href="subscription.html"
+                      class="menu-link"
+                      >Подписка</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/media.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Медиа</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img class="logo" src="images/Logo_words.svg" alt="" />
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="index.html">Главная</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Каналы</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Билеты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="menu__list-item">
+                <button class="loop__btn">
+                  <img class="loop__img" src="images/loop.svg" alt="o" />
+                </button>
+                <a href="personal-area.html" class="menu__list-link menu__login">Мой аккаунт</a>
+              </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="promo">
+          <div class="container">
+            <div class="promo__inner">
+                <div class="continue-watch">
+                <a class="continue-watch__title" href="#">Продолжить просмотр</a>
+                  <div class="continue-watch__films">
+                    <div class="film__container">
+                      <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                      <span></span>
+                      <p class="film-poster_subtitle">После. Навсегда</p>
+                    </div>
+                    <div class="film__container">
+                      <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                      <span></span>
+                      <p class="film-poster_subtitle">После. Навсегда</p>
+                    </div>
+                    <div class="film__container">
+                      <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                      <span></span>
+                      <p class="film-poster_subtitle">После. Навсегда</p>
+                    </div>
+                    <div class="film__container">
+                      <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                      <span></span>
+                      <p class="film-poster_subtitle">После. Навсегда</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="films">
+          <div class="container">
+            <div class="films__inner">
+              <div class="watching-now">
+                <a class="watching-now__title" href="#">Смотрят сейчас</a>
+                <div class="watching-now__films-vert">
+                  <div class="film__container">
+                    <img class="film-poster" id="oppenheimer-vert" onclick="transitionPoster('oppenheimer-vert')" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                </div>
+              </div>
+              <div class="recommended-series">
+                <a class="watching-now__title" href="#">Смотрят сейчас</a>
+                <div class="watching-now__films-vert">
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                </div>
+              </div>
+              <div class="movies-evening">
+                <a class="watching-now__title" href="#">Смотрят сейчас</a>
+                <div class="watching-now__films-vert">
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                </div>
+              </div>
+              <div class="free-films">
+                <a class="watching-now__title" href="#">Смотрят сейчас</a>
+                <div class="watching-now__films-vert">
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                  <div class="film__container">
+                    <img class="film-poster" src="images/oppenheimer-vert.png" alt="film" />
+                    <p class="film-poster_subtitle-vert">Оппенгеймер</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="horizontal-line"></div>
+              <div class="footer__contain">
+                <div class="footer__question">
+                  <img class="logo-pic" src="images/logo_pic.svg" alt="" />
+                  <p class="questionn">Задать вопрос</p>
+                </div>
+                <div class="footer__social-media">
+                  <div class="social-media">
+                    <img src="images/inst.svg" alt="" />
+                    <img src="images/linked.svg" alt="" />
+                    <img src="images/facebook.svg" alt="" />
+                  </div>
+                  <div class="horizontal-line--small"></div>
+                  <p class="footer__wish">JOIN OUR MOVIE UNIVERSE!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
