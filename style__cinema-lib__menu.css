@@ -394,6 +394,10 @@ ul {
 .film-poster {
 }
 
+#oppenheimer-vert {
+  cursor: pointer;
+}
+
 .recommended-series {
   margin-top: 60px;
 }
