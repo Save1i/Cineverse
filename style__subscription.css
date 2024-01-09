@@ -57,13 +57,78 @@ ul {
   right: 0;
 }
 
+.header__menu {
+  position: relative;
+}
+
 .header__btn {
-  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   border: none;
+  background-color: transparent;
   margin-right: 50px;
+  cursor: pointer;
+}
+
+.header__btn span {
+  border: 2px solid #fff;
+  width: 27px;
+}
+
+.header__menu-container {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  top: -24px;
+  left: -28px;
+  position: absolute;
+  width: 290px;
+  height: 380px;
+  border-radius: 20px;
+  background: #5c4375;
+  transition: opacity 0.3s, visibility 0s linear 0.3s; /* Добавлена задержка для visibility */
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 110px 0 0 22px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+
+.menu-link {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header__menu-container.menu-open {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+  top: -24px;
+  left: -28px;
+  position: absolute;
+  width: 290px;
+  height: 380px;
+  border-radius: 20px;
+  background: #5c4375;
+  transition: opacity 0.3s, visibility 0s linear 0s;
 }
 
 .logo {
+  padding-top: 10px;
+  position: relative;
+  z-index: 10;
 }
 
 .header__inner {
@@ -189,8 +254,26 @@ ul {
   padding: 19px 63px;
   border-radius: 20px;
   background: linear-gradient(270deg, #f4cb51 11.01%, #f1a329 47.16%, #ea780f 81.68%);
+  cursor: pointer;
   border: none;
   margin-left: 50px;
+  transition: transform 0.2s ease-in-out; /* добавляем transition для плавной анимации */
+}
+
+.promo__btn:hover {
+  font-family: Rubik;
+  padding: 19px 63px;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  background: linear-gradient(270deg, #f4cb51 11.01%, #f1a329 47.16%, #ea780f 81.68%);
+  box-shadow: 2px 3px 20px 0px rgba(0, 0, 0, 0.6) inset;
+  border: none;
+  transition: transform 0.2s ease-in-out; /* добавляем transition для плавной анимации */
+}
+
+.promo__btn.clicked {
+  transform: scale(0.95); /* изменяем масштаб при нажатии */
 }
 
 .promo__btn-text {

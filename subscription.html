@@ -18,9 +18,45 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <button class="header__btn">
-              <img src="images/icon_menu.svg" alt="icon menu" />
-            </button>
+            <div class="header__menu">
+              <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header__menu-container">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/general.png" alt="" /><a
+                      href="index.html"
+                      class="menu-link"
+                      >Главная</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/ticket.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Билеты</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/sub.png" alt="" /><a
+                      href="subscription.html"
+                      class="menu-link"
+                      >Подписка</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/media.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Медиа</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
             <img class="logo" src="images/Logo_words.svg" alt="" />
             <nav class="menu">
               <ul class="menu__list">
@@ -72,7 +108,7 @@
                       <p class="privileges__text">HD качество</p>
                     </div>
                   </div>
-                  <button class="promo__btn" type="button">
+                  <button class="promo__btn" type="button" onclick="animateButtonSub()">
                     <p class="promo__btn-text">Попробуйте бесплатно 1 месяц</p>
                   </button>
                   <p class="privileges__conditions">
