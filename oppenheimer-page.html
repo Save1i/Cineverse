@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style__oppenheimer-page.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__menu">
+              <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header__menu-container">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/general.png" alt="" /><a
+                      href="index.html"
+                      class="menu-link"
+                      >Главная</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/ticket.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Билеты</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/sub.png" alt="" /><a
+                      href="subscription.html"
+                      class="menu-link"
+                      >Подписка</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/media.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Медиа</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img class="logo" src="images/Logo_words.svg" alt="" />
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="cinema-lib__menu.html">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Каналы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Билеты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__list-item">
+              <button class="loop__btn">
+                <img class="loop__img" src="images/loop.svg" alt="o" />
+              </button>
+              <a href="personal-area.html" class="menu__list-link menu__login">Мой аккаунт</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="main__inner">
+            <section class="promo">
+              <div class="promo__header">
+                <h1 class="promo__title">Оппенгеймер (2023)</h1>
+                <p class="promo__subtitle">Oppenheimer</p>
+                <button class="promo__btn" type="button" onclick="animateButtonSub()">
+                  <p class="promo__btn-text">Смотреть</p>
+                </button>
+              </div>
+              <div class="about-film">
+                <div class="about-film__inner">
+                  <h2 class="about-film__title">О фильме:</h2>
+                  <ul class="about-film__list">
+                    <li><span>Год производства:</span>2023</li>
+
+                    <li><span>Страна:</span>США, Великобритания</li>
+
+                    <li><span>Жанр:</span>биография, драма</li>
+
+                    <li><span>Режисер:</span>Кристофер Нолан</li>
+
+                    <li><span>Сценарий:</span>Кристофер Нолан, Кай Берд, Мартин Шервин</li>
+
+                    <li>
+                      <span>Продюсер:</span>Томас Хейслип, Хелен Медрано, Кристофер
+                      <p>Нолан</p>
+                    </li>
+
+                    <li><span>Оператор:</span>Хойте Ван Хойтема</li>
+
+                    <li><span>Композитор:</span>Людвиг Горанссон</li>
+
+                    <li><span>Художник:</span>Рут Де Йонг, Джейк Кавало</li>
+
+                    <li><span>Монтаж:</span>Дженифер Лэйм</li>
+
+                    <li><span>Премьера в мире:</span>19 июля 2023</li>
+
+                    <li><span>Время:</span>180 мин</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="main-roles">
+                <div class="main-roles__inner">
+                  <h2 class="main-roles__title">В главных ролях:</h2>
+                  <ul class="main-roles__list">
+                    <li>Киллиан Мерфи</li>
+                    <li>Эмили Блант</li>
+                    <li>Мэтт Дэймон</li>
+                    <li>Роберт Дауни мл.</li>
+                    <li>Флоренс Пью</li>
+                    <li>Джордж Хартнетт</li>
+                    <li>Кейси Аффлек</li>
+                    <li>Рами Малек</li>
+                    <li>Кеннет Брана</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="films">
+              <div class="films__inner">
+                <img class="films_img" src="images/oppenheimer-vert.png" alt="" srcset="" />
+                <iframe
+                  id="oppenheimer"
+                  width="440"
+                  height="248"
+                  src="https://www.youtube.com/embed/PFepj-rWbFE"
+                  title="Оппенгеймер — Официальный русский трейлер #2 (Дубляж, 2023)"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <h2 class="film__title">Трейлер (дублированный)</h2>
+                <button class="films__btn" type="button" onclick="animateButtonSub()">
+                  <p class="promo__btn-text">Смотреть позже</p>
+                </button>
+                <div class="rating">
+                  <h2 class="rating__title">Рейтинг:</h2>
+                  <span></span>
+                  <div class="rewiews-cal">
+                    <h2 class="raiting__value">93%</h2>
+                    <p class="paiting__rewiews">495 оценок</p>
+                  </div>
+                </div>
+                <h2 class="survey">Обзор:</h2>
+                <p class="survey__text">
+                  История жизни американского физика-теоретика Роберта Оппенгеймера, который
+                  во времена Второй мировой войны руководил Манхэттенским проектом — секретными
+                  разработками ядерного оружия.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="horizontal-line"></div>
+            <div class="footer__contain">
+              <div class="footer__question">
+                <img class="logo-pic" src="images/logo_pic.svg" alt="" />
+                <p class="questionn">Задать вопрос</p>
+              </div>
+              <div class="footer__social-media">
+                <div class="social-media">
+                  <img src="images/inst.svg" alt="" />
+                  <img src="images/linked.svg" alt="" />
+                  <img src="images/facebook.svg" alt="" />
+                </div>
+                <div class="horizontal-line--small"></div>
+                <p class="footer__wish">JOIN OUR MOVIE UNIVERSE!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
