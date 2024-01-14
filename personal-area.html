@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style__personal-area.css" />
+    <link rel="stylesheet" href="style__personal-area.css" id="css1" />
   </head>
   <body>
     <div class="wrapper">
@@ -90,16 +90,21 @@
                 <div class="profile__side-bar">
                   <ul class="side-bar__list">
                     <li class="side-bar__list-item">
-                      <a href="" class="side-bar__list-link">Профиль</a>
+                      <a href="#" class="side-bar__list-link active" id="1">Профиль</a>
                     </li>
                     <li class="side-bar__list-item">
-                      <a href="" class="side-bar__list-link">Мои просмотры</a>
+                      <a href="#" class="side-bar__list-link" id="2">Мои просмотры</a>
                     </li>
                     <li class="side-bar__list-item">
-                      <a href="" class="side-bar__list-link">Способы оплаты</a>
+                      <a
+                        href="personal-area__payment-methods.html"
+                        class="side-bar__list-link"
+                        id="3"
+                        >Способы оплаты</a
+                      >
                     </li>
                     <li class="side-bar__list-item">
-                      <a href="" class="side-bar__list-link">Настройки</a>
+                      <a href="" class="side-bar__list-link" id="4">Настройки</a>
                     </li>
                   </ul>
                   <div class="side-bar__down-link">
@@ -107,7 +112,7 @@
                     <a href="" class="side-bar__link-out">Выйти</a>
                   </div>
                 </div>
-                <div class="profile__info">
+                <div class="profile__info" id="profile">
                   <h3 class="profile__info__title"></h3>
                   <div class="profile__info__card">
                     <h3 class="info__title">Ваш профиль</h3>
@@ -157,6 +162,66 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <!-- my-views my-views my-views my-views my-views my-views my-views my-views  -->
+                <div class="profile__info" id="my-views" style="display: none">
+                  <h3 class="profile__info__title"></h3>
+                  <div class="profile__info__card">
+                    <h3 class="info__title">Мои просмотры</h3>
+                    <div class="my-views">
+                      <div class="film__container">
+                        <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                        <span></span>
+                        <p class="film-poster_subtitle">После. Навсегда</p>
+                      </div>
+                      <div class="film__container">
+                        <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                        <span></span>
+                        <p class="film-poster_subtitle">После. Навсегда</p>
+                      </div>
+                      <div class="film__container">
+                        <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                        <span></span>
+                        <p class="film-poster_subtitle">После. Навсегда</p>
+                      </div>
+                      <div class="film__container">
+                        <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                        <span></span>
+                        <p class="film-poster_subtitle">После. Навсегда</p>
+                      </div>
+                      <div class="film__container">
+                        <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                        <span></span>
+                        <p class="film-poster_subtitle">После. Навсегда</p>
+                      </div>
+                      <div class="film__container">
+                        <img class="film-poster_time-bar" src="images/hobbit.png" alt="film" />
+                        <span></span>
+                        <p class="film-poster_subtitle">После. Навсегда</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- cadrs cadrs cadrs cadrs cadrs cadrs cadrs cadrs cadrs cadrs cadrs cadrs  -->
+                <div class="profile__info" id="card" style="display: none">
+                  <h3 class="profile__info__title"></h3>
+                  <div class="profile__info__card">
+                    <h3 class="info__title">Мои карты</h3>
+                    <button class="promo__btn" type="button" onclick="animateButtonSub()">
+                      <p class="promo__btn-text">Добавить карту</p>
+                    </button>
+                    <div class="cadrs">
+                      <div class="cards__inner">
+                        <img src="images/card1.svg" alt="" srcset="" />
+                        <img src="images/card2.svg" alt="" srcset="" />
+                        <img src="images/card3.svg" alt="" srcset="" />
+                      </div>
+                    </div>
+                    <button class="card__btn" type="button" onclick="">
+                      <p class="card__btn-text">Карта по умолчанию</p>
+                    </button>
+                    <h3 class="sales">Бонусы и скидки</h3>
                   </div>
                 </div>
               </div>
