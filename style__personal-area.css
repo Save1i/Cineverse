@@ -196,6 +196,12 @@ ul {
   font-weight: 600;
 }
 
+.side-bar__list-link.active {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
 .side-bar__down-link {
   display: flex;
   flex-direction: column;
@@ -244,13 +250,13 @@ ul {
 .profile__info__card {
   width: 859px;
   height: 618px;
-  background-color: #5c4375;
+  background-color: #fff;
   padding: 40px 0 0 47px;
   border-radius: 20px;
 }
 
 .info__title {
-  color: #fff;
+  color: #250d3c;
   font-size: 36px;
   font-weight: 700;
 }
@@ -277,7 +283,7 @@ ul {
 .input-tel::after {
   content: "";
   position: absolute;
-  background-image: url(images/small_arrow_white.svg);
+  background-image: url(images/small_arrow_dark.svg);
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
@@ -306,7 +312,7 @@ ul {
 .input-gender::after {
   content: "";
   position: absolute;
-  background-image: url(images/small_arrow_white.svg);
+  background-image: url(images/small_arrow_dark.svg);
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
@@ -339,7 +345,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #5c4375;
+  background-color: #fff;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -353,6 +359,7 @@ ul {
 }
 
 .dropdown-content p {
+  color: #5c4375;
   font-size: 24px;
   letter-spacing: -1.3px;
   text-decoration: none;
@@ -371,7 +378,7 @@ ul {
 }
 
 .search-form__text {
-  color: #fff;
+  color: #250d3c;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -386,7 +393,7 @@ ul {
   border: 1px solid #aeaeae;
   outline: none;
   padding: 17px 18px 10px 22px;
-  background-color: #5c4375;
+  background-color: #fff;
 }
 
 .search::placeholder {
@@ -403,6 +410,7 @@ ul {
 }
 
 .boring-items__el {
+  color: #250d3c;
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
