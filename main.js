@@ -144,3 +144,70 @@ function transitionPoster(addTransition) {
       break;
   }
 }
+
+const sideBarBtn1 = document.getElementById("1");
+const sideBarBtn2 = document.getElementById("2");
+const sideBarBtn3 = document.getElementById("3");
+const sideBarBtn4 = document.getElementById("4");
+
+const style1 = document.getElementById("css1");
+const style2 = document.getElementById("css2");
+
+const profile = document.getElementById("profile");
+const paMyViews = document.getElementById("my-views");
+const cards = document.getElementById("card");
+
+sideBarBtn1.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.style.display = "none";
+  paMyViews.style.display = "none";
+  profile.style.display = "block";
+  const buttons = [sideBarBtn1, sideBarBtn2, sideBarBtn3, sideBarBtn4];
+
+  buttons.forEach((btn) => {
+    btn.classList.toggle("active", btn === sideBarBtn1);
+  });
+
+  style1.href = "style__personal-area.css";
+});
+
+sideBarBtn2.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.style.display = "none";
+  profile.style.display = "none";
+  paMyViews.style.display = "block";
+  const buttons = [sideBarBtn1, sideBarBtn2, sideBarBtn3, sideBarBtn4];
+
+  buttons.forEach((btn) => {
+    btn.classList.toggle("active", btn === sideBarBtn2);
+  });
+  style1.href = "style__personal-area__my-views.css";
+});
+
+sideBarBtn3.addEventListener("click", (event) => {
+  event.preventDefault();
+  paMyViews.style.display = "none";
+  profile.style.display = "none";
+  cards.style.display = "block";
+
+  const buttons = [sideBarBtn1, sideBarBtn2, sideBarBtn3, sideBarBtn4];
+
+  buttons.forEach((btn) => {
+    btn.classList.toggle("active", btn === sideBarBtn3);
+  });
+
+  style1.href = "style__personal-area__payment-methods.css";
+});
+
+sideBarBtn4.addEventListener("click", (event) => {
+  event.preventDefault();
+  paMyViews.style.display = "none";
+  profile.style.display = "block";
+  const buttons = [sideBarBtn1, sideBarBtn2, sideBarBtn3, sideBarBtn4];
+
+  buttons.forEach((btn) => {
+    btn.classList.toggle("active", btn === sideBarBtn4);
+  });
+
+  style1.href = "style__personal-area.css";
+});
