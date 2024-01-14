@@ -371,7 +371,7 @@ ul {
   margin-top: 2px;
 }
 
-.film-poster_subtitle-vert {
+.film-poster_subtitle {
   color: #fff;
   font-size: 24px;
   font-weight: 400;
@@ -389,6 +389,13 @@ ul {
 .watching-now__films-vert {
   display: flex;
   gap: 33px;
+}
+
+.film-poster_subtitle-vert {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 .film-poster {
