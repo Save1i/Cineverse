@@ -364,7 +364,8 @@ ul {
   justify-content: space-between;
 }
 
-.footer__question {
+.footer__question svg {
+  margin-bottom: 54px;
 }
 
 .logo-pic {
