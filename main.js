@@ -26,6 +26,48 @@ function animateButtonSub() {
   }, 300);
 }
 
+function animateButtonsWatch() {
+  const button = document.querySelector(".promo__btn");
+  button.classList.add("clicked"); // добавляем класс для анимации
+
+  // Ждем некоторое время и удаляем класс
+  setTimeout(function () {
+    button.classList.remove("clicked");
+  }, 200);
+
+  setTimeout(function () {
+    window.location.href = "https://api.embr.ws/embed/movie/61885"; // переход на страницу subscription.html
+  }, 300);
+}
+
+function animateButtonsWatchLater() {
+  const button = document.querySelector(".promo__btn");
+  button.classList.add("clicked"); // добавляем класс для анимации
+
+  // Ждем некоторое время и удаляем класс
+  setTimeout(function () {
+    button.classList.remove("clicked");
+  }, 200);
+
+  setTimeout(function () {
+    window.location.href = "cinema-lib__menu.html"; // переход на страницу subscription.html
+  }, 300);
+}
+
+function animateButtonsWatch1() {
+  const button = document.querySelector(".promo__btn");
+  button.classList.add("clicked"); // добавляем класс для анимации
+
+  // Ждем некоторое время и удаляем класс
+  setTimeout(function () {
+    button.classList.remove("clicked");
+  }, 200);
+
+  setTimeout(function () {
+    window.location.href = "https://api.embr.ws/embed/movie/33090"; // переход на страницу subscription.html
+  }, 300);
+}
+
 const accordion = document.querySelector(".accordion");
 const accordionButtons = document.querySelectorAll(".accordion__title");
 const plus = document.querySelector(".accordion__btn::after");
@@ -79,6 +121,9 @@ function transitionButton(addTransition) {
         window.location.href = "login__general-information.html";
         break;
       case "login__btn-general-info":
+        window.location.href = "personal-area.html";
+        break;
+      case "login__btn":
         window.location.href = "personal-area.html";
         break;
     }
@@ -135,6 +180,9 @@ function transitionPoster(addTransition) {
   switch (addTransition) {
     case "oppenheimer-vert":
       window.location.href = "oppenheimer-page.html";
+      break;
+    case "theColorPurple":
+      window.location.href = "the-color-purple.html";
       break;
     case "login__btn-input-number":
       window.location.href = "login__general-information.html";
