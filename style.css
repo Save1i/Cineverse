@@ -153,10 +153,32 @@ ul {
   color: #fff;
   font-size: 25px;
   font-weight: 700;
+  position: relative;
 }
+
+/* .menu__list-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #326bdd;
+  transition: all 0.3s ease;
+}
+
+.menu__list-link:hover::after {
+  width: 80%;
+} */
 
 .menu__login {
   opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.menu__login:hover {
+  opacity: 0.8;
 }
 
 .promo {
@@ -272,8 +294,7 @@ ul {
 
 .films {
   background-color: #0c0513;
-  /* filter: blur(20px); */
-  min-width: 1512px;
+  max-width: 100vw;
   min-height: 1500px;
   position: relative;
   top: 0px;
