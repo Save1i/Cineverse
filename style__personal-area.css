@@ -170,6 +170,11 @@ ul {
 .menu__login {
   opacity: 0.6;
   text-wrap: nowrap;
+  transition: opacity 0.1s ease-in;
+}
+
+.menu__login:hover {
+  opacity: 0.8;
 }
 
 .profile {
