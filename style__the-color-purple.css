@@ -471,12 +471,7 @@ iframe {
   justify-content: space-between;
 }
 
-.footer__question {
-}
-
-.logo-pic {
-  width: 84px;
-  height: 84px;
+.footer__question svg {
   margin-bottom: 54px;
 }
 
