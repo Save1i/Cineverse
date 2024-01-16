@@ -32,6 +32,7 @@ span {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 ul {
@@ -47,7 +48,7 @@ ul {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1320px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -169,6 +170,11 @@ ul {
 .menu__login {
   opacity: 0.6;
   text-wrap: nowrap;
+  transition: opacity 0.1s ease-in;
+}
+
+.menu__login:hover {
+  opacity: 0.8;
 }
 
 .promo {
@@ -302,6 +308,16 @@ ul {
   position: relative;
 }
 
+.film__container img {
+  cursor: pointer;
+  /* filter: brightness(100%); */
+  transition: filter 0.3s ease;
+}
+
+.film__container:hover img {
+  filter: brightness(60%);
+}
+
 .film-poster_time-bar {
   width: 300px;
   height: 154px;
@@ -396,6 +412,7 @@ ul {
   font-size: 24px;
   font-weight: 400;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .film-poster {
