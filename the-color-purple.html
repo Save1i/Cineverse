@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style__the-color-purple.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__menu">
+              <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header__menu-container">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/general.png" alt="" /><a
+                      href="index.html"
+                      class="menu-link"
+                      >Главная</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/ticket.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Билеты</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/sub.png" alt="" /><a
+                      href="subscription.html"
+                      class="menu-link"
+                      >Подписка</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <img class="menu-icon" src="images/media.png" alt="" /><a
+                      href=""
+                      class="menu-link"
+                      >Медиа</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img class="logo" src="images/Logo_words.svg" alt="" />
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="cinema-lib__menu.html">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Каналы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Билеты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__list-item">
+              <button class="loop__btn">
+                <img class="loop__img" src="images/loop.svg" alt="o" />
+              </button>
+              <a href="personal-area.html" class="menu__list-link menu__login">Мой аккаунт</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="main__inner">
+            <section class="promo">
+              <div class="promo__header">
+                <h1 class="promo__title">Цвет лиловый (2023)</h1>
+                <p class="promo__subtitle">The color purple</p>
+                <button class="promo__btn" type="button" onclick="animateButtonsWatch1()">
+                  <p class="promo__btn-text">Смотреть</p>
+                </button>
+              </div>
+              <div class="about-film">
+                <div class="about-film__inner">
+                  <h2 class="about-film__title">О фильме:</h2>
+                  <ul class="about-film__list">
+                    <li><span>Год производства:</span>2023</li>
+
+                    <li><span>Страна:</span>США</li>
+
+                    <li><span>Жанр:</span>мюзикл, драма</li>
+
+                    <li><span>Режисер:</span>Блитц Бавазуле</li>
+
+                    <li><span>Сценарий:</span>Маркус Гардли, Элис Уокер, Марша Норман</li>
+
+                    <li>
+                      <span>Продюсер:</span>Майкл Бегг, Питер Чиапета, Адам Фелл,
+                      <p>...</p>
+                    </li>
+
+                    <li><span>Оператор:</span>Дан Лаустсен</li>
+
+                    <li><span>Композитор:</span>Крис Бауэрс</li>
+
+                    <li>
+                      <span>Художник:</span>Пол Д. Остерберри, Энди Крамбли, Карла
+                      <p>Мартинез</p>
+                    </li>
+
+                    <li><span>Монтаж:</span>Джон Полл</li>
+
+                    <li><span>Премьера в мире:</span>27 октября 2023</li>
+
+                    <li><span>Время:</span>140 мин</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="main-roles">
+                <div class="main-roles__inner">
+                  <h2 class="main-roles__title">В главных ролях:</h2>
+                  <ul class="main-roles__list">
+                    <li>Тараджи П. Хенсон</li>
+                    <li>Даниэль Брукс</li>
+                    <li>Колман Доминго</li>
+                    <li>Кори Хокинс</li>
+                    <li>Н. Е. R.</li>
+                    <li>Холли Бейли</li>
+                    <li>Филиша Пэрл Мпаси</li>
+                    <li>Сиара</li>
+                    <li>Дэвид Алан Грир</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="films">
+              <div class="films__inner">
+                <img class="films_img" src="images/цветлиловый.png" alt="" srcset="" />
+                <iframe
+                  width="440"
+                  height="248"
+                  src="https://www.youtube.com/embed/zTnircQsMaM"
+                  title="The Color Purple | Official Trailer 3"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <h2 class="film__title">Трейлер (дублированный)</h2>
+                <button class="films__btn" type="button" onclick="animateButtonsWatchLater()">
+                  <p class="promo__btn-text">Смотреть позже</p>
+                </button>
+                <div class="rating">
+                  <h2 class="rating__title">Рейтинг:</h2>
+                  <span></span>
+                  <div class="rewiews-cal">
+                    <h2 class="raiting__value">80%</h2>
+                    <p class="paiting__rewiews">290 оценок</p>
+                  </div>
+                </div>
+                <h2 class="survey">Обзор:</h2>
+                <p class="survey__text">
+                  История трех афроамериканских женщин, помогающих друг другу в нелегких условиях
+                  жизни на юге США в начале 1900-х годов.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="horizontal-line"></div>
+            <div class="footer__contain">
+              <div class="footer__question">
+                <img class="logo-pic" src="images/logo_pic.svg" alt="" />
+                <p class="questionn">Задать вопрос</p>
+              </div>
+              <div class="footer__social-media">
+                <div class="social-media">
+                  <img src="images/inst.svg" alt="" />
+                  <img src="images/linked.svg" alt="" />
+                  <img src="images/facebook.svg" alt="" />
+                </div>
+                <div class="horizontal-line--small"></div>
+                <p class="footer__wish">JOIN OUR MOVIE UNIVERSE!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
