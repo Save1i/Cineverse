@@ -52,6 +52,7 @@ ul {
 
 .container {
   max-width: 1320px;
+  height: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -198,7 +199,7 @@ ul {
 .channels {
   background-color: #0c0513;
   min-width: 100vw;
-  min-height: 100vh;
+  height: calc(100vh + 1280px);
   position: relative;
   top: 0px;
 }
@@ -212,6 +213,12 @@ ul {
   bottom: 0;
   background-color: inherit;
   filter: blur(20px);
+}
+
+.channels__inner {
+  position: relative;
+  top: -815px;
+  height: 100%;
 }
 
 .title {
