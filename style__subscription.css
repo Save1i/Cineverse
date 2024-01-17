@@ -170,7 +170,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 0px;
-  min-height: 1500px;
+  min-height: 100vh;
   padding-top: 216px;
 }
 

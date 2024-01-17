@@ -281,9 +281,8 @@ ul {
 
 .films {
   background-color: #0c0513;
-  /* filter: blur(20px); */
-  min-width: 1512px;
-  min-height: 1500px;
+  max-width: 100vw;
+  min-height: 100vh;
   position: relative;
   top: 0px;
 }

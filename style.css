@@ -295,7 +295,7 @@ ul {
 .films {
   background-color: #0c0513;
   max-width: 100vw;
-  min-height: 1500px;
+  min-height: 100vh;
   position: relative;
   top: 0px;
 }
