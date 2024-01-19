@@ -190,6 +190,15 @@ function transitionPoster(addTransition) {
     case "login__btn-general-info":
       window.location.href = "personal-area.html";
       break;
+    case "promo__arrow":
+      window.location.href = "ticket.html";
+      break;
+    case "luna":
+      window.location.href = "ticket.html";
+      break;
+    case "click__here":
+      window.location.href = "choose-place.html";
+      break;
   }
 }
 
@@ -247,15 +256,15 @@ sideBarBtn3.addEventListener("click", (event) => {
   style1.href = "style__personal-area__payment-methods.css";
 });
 
-sideBarBtn4.addEventListener("click", (event) => {
-  event.preventDefault();
-  paMyViews.style.display = "none";
-  profile.style.display = "block";
-  const buttons = [sideBarBtn1, sideBarBtn2, sideBarBtn3, sideBarBtn4];
+// sideBarBtn4.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   paMyViews.style.display = "none";
+//   profile.style.display = "block";
+//   const buttons = [sideBarBtn1, sideBarBtn2, sideBarBtn3, sideBarBtn4];
 
-  buttons.forEach((btn) => {
-    btn.classList.toggle("active", btn === sideBarBtn4);
-  });
+//   buttons.forEach((btn) => {
+//     btn.classList.toggle("active", btn === sideBarBtn4);
+//   });
 
-  style1.href = "style__personal-area.css";
-});
+//   style1.href = "style__personal-area.css";
+// });

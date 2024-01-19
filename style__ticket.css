@@ -1,0 +1,516 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  line-height: 32.455px;
+  letter-spacing: -0.335px;
+}
+
+body,
+html {
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: -330px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/мятежнаяЛуна.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: 100vw;
+  filter: blur(40px);
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+}
+
+.header__menu {
+  position: relative;
+}
+
+.header__btn {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background-color: transparent;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.header__btn span {
+  border: 2px solid #fff;
+  width: 27px;
+}
+
+.header__menu-container {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  top: -24px;
+  left: -28px;
+  position: absolute;
+  width: 290px;
+  height: 380px;
+  border-radius: 20px;
+  background: #5c4375;
+  transition: opacity 0.3s, visibility 0s linear 0.3s; /* Добавлена задержка для visibility */
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 110px 0 0 22px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+
+.menu-link {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header__menu-container.menu-open {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+  top: -24px;
+  left: -28px;
+  position: absolute;
+  width: 290px;
+  height: 380px;
+  border-radius: 20px;
+  background: #5c4375;
+  transition: opacity 0.3s, visibility 0s linear 0s;
+}
+
+.logo {
+  padding-top: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px 0px 0px;
+}
+
+.menu {
+  flex-grow: 1; /*теперь содержимое будет занимать все свободное место*/
+  display: flex;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 100px;
+  list-style-type: none;
+}
+
+.menu__list-link {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.loop__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.menu__list-item {
+  display: flex;
+  gap: 30px;
+}
+
+.menu__login {
+  opacity: 0.6;
+  text-wrap: nowrap;
+  transition: opacity 0.1s ease-in;
+}
+
+.menu__login:hover {
+  opacity: 0.8;
+}
+
+.main {
+}
+
+.main__inner {
+  margin-top: 150px;
+}
+
+.promo__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1378px;
+  height: 133px;
+  border: 4px solid rgb(244, 203, 82, 0.7);
+  border-radius: 20px;
+  margin-bottom: 90px;
+}
+
+.promo__cinema {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.promo__date {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.promo__time {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.promo__format {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.films__inner {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+  margin-bottom: 115px;
+}
+
+.films__title {
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 60px;
+  margin-bottom: 32px;
+}
+
+.films__about {
+  color: #f4cb52;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -0.335px;
+  margin-bottom: 64px;
+}
+
+.films__description {
+  font-size: 24px;
+  font-weight: 400;
+  width: 448px;
+}
+
+.ticket__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.ticket__line {
+  background: #f0bf2c;
+  height: 6px;
+  width: 1048px;
+}
+
+.cinema__ticket {
+  display: flex;
+  gap: 55px;
+  margin-top: 60px;
+}
+
+.ticket__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text__title {
+  font-size: 29px;
+  font-weight: 600;
+  width: 191px;
+}
+
+.text__location {
+  font-size: 20px;
+  color: #c4c4c4;
+  font-weight: 400;
+  width: 202px;
+}
+
+.choose__time {
+  display: flex;
+  gap: 22px;
+}
+
+.ticket__time {
+  border: 4px solid rgba(244, 203, 82, 0.6);
+  width: 207px;
+  height: 169px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 35px;
+}
+
+.cinema__load {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket__zal {
+  font-size: 20px;
+  color: #c4c4c4;
+  font-weight: 600;
+}
+
+.cinema__load span {
+  display: block;
+  width: 116px;
+  height: 5px;
+  background-color: #c4c4c4;
+  margin-top: 2px;
+  position: relative;
+}
+
+.cinema__load span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2px;
+  width: 80%;
+  height: 5px;
+  background-color: #ea780f;
+  margin-top: 2px;
+}
+
+.cinema__load_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket__zal_two {
+  font-size: 20px;
+  color: #c4c4c4;
+  font-weight: 600;
+}
+
+.cinema__load_two span {
+  display: block;
+  width: 116px;
+  height: 5px;
+  background-color: #c4c4c4;
+  margin-top: 2px;
+  position: relative;
+}
+
+#click__here {
+  cursor: pointer;
+}
+
+.cinema__load_two span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2px;
+  width: 30%;
+  height: 5px;
+  background-color: #61c645;
+  margin-top: 2px;
+}
+
+.cinema__load_three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket__zal_three {
+  font-size: 20px;
+  color: #c4c4c4;
+  font-weight: 600;
+}
+
+.cinema__load_three span {
+  display: block;
+  width: 116px;
+  height: 5px;
+  background-color: #c4c4c4;
+  margin-top: 2px;
+  position: relative;
+}
+
+.cinema__load_three span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2px;
+  width: 30%;
+  height: 5px;
+  background-color: #61c645;
+  margin-top: 2px;
+}
+
+.cinema__third {
+  margin-bottom: 245px;
+}
+
+.footer {
+  position: relative;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  filter: blur(40px);
+  height: 100%;
+}
+
+.footer__inner {
+  padding-bottom: 55px;
+  padding-top: 50px;
+}
+
+.horizontal-line {
+  height: 0px;
+  border: 1px SOLID rgba(244, 203, 82, 0.6);
+  max-width: 1300px;
+  margin: 0px auto 70px auto;
+}
+
+.footer__contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__question svg {
+  margin-bottom: 54px;
+}
+
+.questionn {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 14.396px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11.68px; /* 81.138% */
+  letter-spacing: -0.121px;
+}
+
+.footer__social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 15px;
+}
+
+.social-media {
+  display: flex;
+  gap: 35px;
+}
+
+.horizontal-line--small {
+  border: 2px solid #fff;
+  width: 279px;
+  height: 0px;
+  margin-top: 28px;
+}
+
+.footer__wish {
+  color: #fff;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 17.268px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.949px; /* 127.105% */
+  letter-spacing: 3.3px;
+  padding-top: 34px;
+}
