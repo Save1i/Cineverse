@@ -232,11 +232,10 @@ ul {
 
 .film__container img {
   cursor: pointer;
-  /* filter: brightness(100%); */
   transition: filter 0.3s ease;
 }
 
-.film__container img {
+.film__container img:hover {
   filter: brightness(60%);
 }
 
