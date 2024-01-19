@@ -222,6 +222,14 @@ ul {
   font-weight: 600;
 }
 
+.promo__format {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 29px;
+  font-weight: 600;
+}
+
 .promo__time {
   display: flex;
   align-items: center;
